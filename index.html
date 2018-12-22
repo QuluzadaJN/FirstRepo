@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+//         //start task1
+//         let array_items = [45, 67, true, "Hello", "Baku", 99, 101, 900, "Teymur", 66, 34];
+//         let sum = 0;
+//         for (let i = 0; i < array_items.length; i++) {
+//             if (typeof array_items[i] == "number") {
+//                 sum += array_items[i]
+//             }
+//         }
+//         console.log(sum);
+//         sum = 0;
+//         for (let i in array_items) {
+//             if (typeof array_items[i] == "number") {
+//                 sum += array_items[i]
+//             }
+//         }
+//         console.log(sum);
+//         sum = 0;
+//         for (let i of array_items) {
+//             if (typeof i == "number") {
+//                 sum += i
+//             }
+//         }
+//         console.log(sum);
+//         sum = 0;
+//         //end task
+        
+//         //start task2
+//         count = 0
+//         result = 0;
+//         for (let i = 0; i < array_items.length; i++) {
+//             if (typeof array_items[i] == "number") {
+//                 if(array_items[i]%2 == 0){
+//                 sum += array_items[i];
+//                 count++;
+//                 }
+//             }
+//         }
+//         result = sum/count
+//         console.log(result);
+//         sum = 0;
+//         result = 0;
+//         count = 0;
+
+
+//         for(let i in array_items){
+//             if (typeof array_items[i] == "number") {
+//                 if(array_items[i]%2 == 0){
+//                 sum += array_items[i];
+//                 count++;
+//                 }
+//             }
+//         }
+//         result = sum/count
+//         console.log(result);
+//         sum = 0;
+//         result = 0;
+//         count = 0;
+
+//         for(let i of array_items){
+//             if (typeof i == "number") {
+//                 if(i%2 == 0){
+//                 sum += i;
+//                 count++;
+//                 }
+//             }
+//         }
+//         result = sum/count
+//         console.log(result);
+//         sum = 0;
+//         result = 0;
+//         //end task2
+        
+
+//         // start task3
+//         let rs = ""
+//         for(let i = 0; i<array_items.length; i++){
+//             if(typeof array_items[i] == "string"){
+//                 if(array_items[i].length > 4){
+//                     for(var l = 0; l<array_items[i].length; l++){
+//                         rs += array_items[i].charCodeAt(l).toString(16) + " ";
+//                     }
+//                 }
+//             }
+//         }
+//         console.log(rs)
+
+//         rs = "";
+//         for(let i in array_items){
+//             if(typeof array_items[i] == "string"){
+//                 if(array_items[i].length > 4){
+//                     for(var l = 0; l<array_items[i].length; l++){
+//                         rs += array_items[i].charCodeAt(l).toString(16) + " ";
+//                     }
+//                 }
+//             }
+//         }
+//         console.log(rs)
+
+//         rs = "";
+//         for(let i of array_items){
+//             if(typeof i == "string"){
+//                 if(i.length > 4){
+//                     for(var l = 0; l<i.length; l++){
+//                         rs += i.charCodeAt(l).toString(16) + " ";
+//                     }
+//                 }
+//             }
+//         }
+//         console.log(rs)
+// //end task3
+
+
+
+
+let newArray = [99, 300, 210, 66, 36, 42, 43, 13, 12, 45, "Task", "console", "app", false, 45.5, true, "Teymur"];
+//task1
+let element = "";
+for(let i of newArray){
+    if(typeof(i) == "number"){
+        if(i<100){
+            if(i%3 == 0){
+                element+=i;
+            }
+        }
+    }
+}
+console.log(element);
+element = "";
+
+//task2
+for(let i in newArray){
+    if(typeof(newArray[i]) == "string"){
+        for(let j in newArray[i]){
+            if(newArray[i].charCodeAt(j)>=65 && newArray[i].charCodeAt(j)<=90){
+                element+= newArray[i][j];
+            }
+        }
+    }
+}
+console.log(element);
+
+element = "";
+
+//task3
+for(let i in newArray){
+    if(typeof(newArray[i]) == "string"){
+        for(let j in newArray[i]){
+            if(newArray[i].charCodeAt(j)>=101 && newArray[i].charCodeAt(j)<=120){
+                element+= newArray[i][j];
+            }
+        }
+    }
+}
+console.log(element);
+
+//commit added
+
+    </script>
+</body>
+
+</html>
